@@ -1,3 +1,4 @@
+from tkinter import *
 import random
 
 def passKeyGen():
@@ -39,4 +40,26 @@ txt_Symbol = ["£","$","%","^","&","*","(",")","_","-","+","=","[","]","{","}","
 tmp = 0
 index = 0
 
+#declaring the window
+window = Tk()
+# setting the window title
+window.title("MegaBytes' PassKey Generator")
+# set window width and height
+window.configure(width=500, height=300)
+# set window background color
+window.configure(bg='lightgray')
+winWidth = window.winfo_reqwidth()
+winwHeight = window.winfo_reqheight()
+posRight = int(window.winfo_screenwidth() / 2 - winWidth / 2)
+posDown = int(window.winfo_screenheight() / 2 - winwHeight / 2)
+window.geometry("+{}+{}".format(posRight, posDown))
+
+#creating gen button
+gen = Button(text="Generate")
+gen.place(relx=0.5, rely=0.5, anchor=CENTER)
+
 passKeyGen()
+
+window.mainloop()
+
+
