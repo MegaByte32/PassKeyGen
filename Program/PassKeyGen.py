@@ -5,7 +5,7 @@ import random
 def passKeyGen():
 
     '''
-    Name:        passFounder
+    Name:        PassKeyGen
     Purpose:     Password random generator (length 16)
     Author:      MegaByte
     Editor:      Soliman2020
