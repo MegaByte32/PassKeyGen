@@ -3,8 +3,15 @@ A simple method to create strong password.
 
 ## DISCLAIMER:
 
-#### I TAKE NO RESPONSIBILITY FOR ANY DAMADGES/ LOSS OF DATA WHEN USING THIS APPLICATION OR THE CODE WITHIN. THIS IS IN NO WAY A BETTER ALTERNATIVE TO CREATING A STRONG PASSWORD YOURSELF, NOR AM I IMPLYING THIS AT ANY STAGE OF THIS DEVELOPMENT. SHOULD THIS APPLICATION BE RELEASED TO THE PUBLIC PLEASE BEAR THIS IN MIND. THIS APPLICATION WORKS BEST IN COMBINATION WITH A HUMAN BRAIN AND THEREFORE IT IS BEST TO REVIEW THE PRODUCED PASSWORD BEFORE PUTTING IT INTO USE. THIS USES A SIMPLE RANDOM GENERATOR. PLEASE SEE THE USER MANUAL FOR DETAILS ON HOW TO USE THIS APPLICATION.
-
-THANK YOU FOR USING.
-STAY SAFE.
-MB.
+Standard Software Disclaimer
+All of our software is covered by this disclaimer:
+While I make every effort to deliver high quality products, I do not
+guarantee that my products are free from defects. My software is provided “as is," and you use the
+software at your own risk.
+I make no warranties as to performance, merchantability, fitness for a particular purpose, or any
+other warranties whether expressed or implied.
+No oral or written communication from or information provided by me *MegaByte*
+shall create a warranty.
+Under no circumstances shall I be liable for direct, indirect, special,
+incidental, or consequential damages resulting from the use, misuse, or inability to use this software,
+even if I *MegaByte* has been advised of the possibility of such damages.
