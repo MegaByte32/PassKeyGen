@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox as mb
 import random
 
 def passKeyGen():
@@ -13,7 +14,6 @@ def passKeyGen():
     Copyright:   (c) MegaByte 2021
     Licence:     <your licence>
     '''
-
     passW = ""
 
     for i in range(0, 16):
@@ -30,8 +30,11 @@ def passKeyGen():
         if tmp == 4:
             index = random.randint(0, len(txt_Symbol)-1)  # length-1 to avoid IndexError: list index out of range
             passW = passW + (txt_Symbol[index])
-    print("Your password is",passW)
+    print("Your Password is: ", passW)
+    return outputKey(passW)
 
+def outputKey(passW):
+     mb.showinfo('Generated PassKey', 'Please make a copy of this before closing/ clicking ok: '+passW)
 
 txt_Lower = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 txt_Upper = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
@@ -39,6 +42,7 @@ txt_Int = ["0","1","2","3","4","5","6","7","8","9"]
 txt_Symbol = ["£","$","%","^","&","*","(",")","_","-","+","=","[","]","{","}","'","@",":",";","#","~","?","|",".",","]
 tmp = 0
 index = 0
+
 
 #declaring the window
 window = Tk()
@@ -55,10 +59,9 @@ posDown = int(window.winfo_screenheight() / 2 - winwHeight / 2)
 window.geometry("+{}+{}".format(posRight, posDown))
 
 #creating gen button
-gen = Button(text="Generate")
+gen = Button(text="Generate", command = passKeyGen)
 gen.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-passKeyGen()
 
 window.mainloop()
 
